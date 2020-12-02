@@ -6,6 +6,7 @@ import { accessibleRouteChangeHandler } from '@app/utils/utils';
 import { Dashboard } from '@app/Dashboard/Dashboard';
 import { GeneralSettings } from '@app/Settings/General/GeneralSettings';
 import { ProfileSettings } from '@app/Settings/Profile/ProfileSettings';
+import { ResourceSettings } from '@app/Settings/Resource/ResourceSettings';
 import { NotFound } from '@app/NotFound/NotFound';
 import { useDocumentTitle } from '@app/utils/useDocumentTitle';
 import { LastLocationProvider, useLastLocation } from 'react-router-last-location';
@@ -90,6 +91,13 @@ const routes: AppRouteConfig[] = [
         label: 'Profile',
         path: '/settings/profile',
         title: 'PatternFly Seed | Profile Settings',
+      },
+      {
+        component: ResourceSettings,
+        exact: true,
+        label: 'Resource',
+        path: '/settings/resource',
+        title: 'PatternFly Seed | Resource Settings',
       },
     ],
   },

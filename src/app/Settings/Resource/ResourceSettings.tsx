@@ -1,12 +1,12 @@
 import * as React from 'react';
 import { PageSection, Title } from '@patternfly/react-core';
 
-const Dashboard: React.FunctionComponent = () => (
+const ResourceSettings: React.FunctionComponent = () => (
   <PageSection>
     <Title headingLevel="h1" size="lg">
-      Dashboard Page Title
+      Resource Settings Page Title
     </Title>
   </PageSection>
 );
 
-export { Dashboard };
+export { ResourceSettings };
